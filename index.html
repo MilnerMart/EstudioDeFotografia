@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio de Fotografía</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/temporaryLogo.png" width="100" alt="Logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/perritoTemporary.jpg" class="d-block w-100" alt="Foto 1" />
+        <div class="reservar text-center">
+          <h3>Fotografía</h3>
+          <button class="btn-reservar">Reservar</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/temporaryLogo.png" class="d-block w-100" alt="Logo" />
+        <div class="reservar text-center">
+          <h3>Fotografía</h3>
+          <button class="btn-reservar">Reservar</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/temporarymichi.jpeg" class="d-block w-100" alt="Foto 3" />
+        <div class="reservar text-center">
+          <h3>Fotografía</h3>
+          <button class="btn-reservar">Reservar</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <div class="container-xxl service-container-full" id="services">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center text-white">Servicios de cobertura fotográfica</h1>
+      </div>
+    </div>
+    <div class="row" id="serviceCards">
+      <div class="card" style="width: 18rem;">
+        <img src="assets/img/perritoTemporary.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="assets/img/temporaryLogo.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="assets/img/temporarymichi.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="assets/img/temporarymichi.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-xxl" id="contact">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center text-white">Contacto</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 form-collage-container">
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" class="form-control" autocomplete="off">
+
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" class="form-control" autocomplete="off">
+
+          <label for="servicios">Servicios:</label>
+          <select id="servicios" name="servicios" class="form-select">
+            <option value="servicio1">Servicio 1</option>
+            <option value="servicio2">Servicio 2</option>
+            <option value="servicio3">Servicio 3</option>
+          </select>
+
+          <textarea class="form-control" placeholder="Ingrese su comentario..."></textarea>
+          <input type="submit" class="btn btn-success mt-3" value="Enviar">
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="pt-5 text-white">
+    <div class="row w-100" style="padding-left: 8%;">
+      <div class="col-md-6 col-lg-3 mb-4 text-left">
+        <h1 class="text-primary"><span class="text-white">ESTUDIO <br /></span>DE FOTOGRAFÍA</h1>
+        <p>Horario de atención: Lun a Sáb de 9:00 a 18:00</p>
+        <h6 class="text-white text-uppercase mt-3" style="letter-spacing: 5px;">Síguenos</h6>
+        <div class="d-flex gap-3 mt-2">
+          <a class="btn btn-outline-light btn-sm" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-sm" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4" style="padding-left: 2%;">
+        <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contáctanos</h5>
+        <p><i class="fa fa-map-marker-alt me-2"></i> Direccion</p>
+        <p><i class="fa fa-phone-alt me-2"></i> +1234561563</p>
+        <p><i class="fa fa-envelope me-2"></i> contacto@estudio.com</p>
+      </div>
+    </div>
+    <div class="text-center py-3 border-top border-secondary mt-4">
+      <small>&copy; 2025 Estudio de Fotografía. Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
