@@ -396,7 +396,7 @@ footer a i {
 
 .navbar {
   padding: 10px 20px;
-  background-color: var(--dark-color);
+  /* background-color: var(--dark-color); */
 }
 .navbar-brand{
   padding-left: 2%;
